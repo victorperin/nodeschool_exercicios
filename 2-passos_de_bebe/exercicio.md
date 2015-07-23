@@ -27,15 +27,11 @@ Nesse caso a saída seria um array, algo parecido com isso:
 
     [ 'node', '/caminho/para/seu/program.js', '1', '2', '3' ]
 
-Você vai precisar pensar sobre como fazer uma repetição (loop) através do número de argumentos para que você possa fornecer apenas a soma deles. O primeiro elemento do array process.argv é s
-empre 'node' e o segundo elemento é sempre o caminho para seu arquivo program.js, então você precisa começar no terceiro elemento (índice 2), adicionando cada item ao total até que você atin
-ja o fim do array.
+Você vai precisar pensar sobre como fazer uma repetição (loop) através do número de argumentos para que você possa fornecer apenas a soma deles. O primeiro elemento do array process.argv é sempre 'node' e o segundo elemento é sempre o caminho para seu arquivo program.js, então você precisa começar no terceiro elemento (índice 2), adicionando cada item ao total até que você atinja o fim do array.
 
-Também esteja ciente que todos os elementos do process.argv são string e você pode precisar convertê-los em números. Você pode fazer isso prefixando a propriedade com + ou passando-os como a
-rgumento para Number(). Por exemplo: +process.argv[2] ou Number(process.argv[2]).
+Também esteja ciente que todos os elementos do process.argv são string e você pode precisar convertê-los em números. Você pode fazer isso prefixando a propriedade com + ou passando-os como argumento para Number(). Por exemplo: +process.argv[2] ou Number(process.argv[2]).
 
-learnyounode irá fornecer argumentos para seu programa quando você rodar learnyounode verify program.js, então você não precisa se preocupar em fornecê-los. Para testar seu programa sem a ve
-rificação, você pode invocá-lo com learnyounode run program.js. Quando você usa run você está invocando o ambiente de testes que o learnyounode prepara para cada exercício.
+learnyounode irá fornecer argumentos para seu programa quando você rodar learnyounode verify program.js, então você não precisa se preocupar em fornecê-los. Para testar seu programa sem a verificação, você pode invocá-lo com learnyounode run program.js. Quando você usa run você está invocando o ambiente de testes que o learnyounode prepara para cada exercício.
 
 -------------------------------------------------------------------------------
 
