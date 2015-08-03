@@ -29,7 +29,6 @@ for(var x=0;x<urls.length;x++){
 
 function printAllStrings(){
   if(quantidadeRespostas==urls.length){
-    console.log(characteresResposta);
     for(var x=0;x<urls.length;x++){
       console.log(respostas[x]);
     }
